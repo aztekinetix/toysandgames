@@ -1,0 +1,46 @@
+﻿<h3>{{title}}</h3>
+<form name="addToyForm" role="form">
+
+    <div class="form-group">
+        <label for="Name" class="col-md-2 control-label">Name:</label>
+        <div class="col-md-10">
+            <input type="text" class="form-control" name="Name" data-ng-model="Name" data-ng-maxlength="100" required />
+            <span style="color:red" ng-if="addToyForm.Name.$error.maxlength">Only 100 chars allowed</span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="Price" class="col-md-2 control-label">Price:</label>
+        <div class="col-md-10">
+            <input type="text" class="form-control" id="Price" data-ng-model="Price" required />
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="Company" class="col-md-2 control-label">Company:</label>
+        <div class="col-md-10">
+            <input type="text" class="form-control" id="Company" data-ng-model="Company" required />
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="AgeRestriction" class="col-md-2 control-label">Maximum Age:</label>
+        <div class="col-md-10">
+
+            <select class="form-control" data-ng-model="AgeRestriction" data-ng-options="age for age in agesOptions(0, 100)"></select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="Description" class="col-md-2 control-label">Description:</label>
+        <div class="col-md-10">
+            <textarea class="form-control" id="Description" data-ng-model="Description"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <button type="submit" class="btn btn-primary" data-ng-click="save()">Go!!
+            </button>  <a href="#/" class="btn btn-primary">Back to List</a>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div style="color:red">{{error}}</div>
+    </div>
+</form>

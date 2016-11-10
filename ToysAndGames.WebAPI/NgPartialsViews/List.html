@@ -1,0 +1,37 @@
+﻿<div class="row col-lg-offset-3"><a href="#/Add" class="btn btn-primary">+ Add New</a></div>
+
+<div class="row">
+    <table class="col-md-6 col-lg-offset-3">
+        <tr>
+            <th> Id</th>
+            <th> Name</th>
+            <th>Age</th>
+            <th>Price</th>
+            <th>Company</th>
+            <th>Operations</th>
+        </tr>
+
+        <tr data-ng-repeat="toy in toySet">
+            <td>
+                {{toy.Id}}
+            </td>
+            <td>
+                {{toy.Name}}
+            </td>
+            <td>
+                {{toy.AgeRestriction}}
+            </td>
+            <td>
+                {{toy.Price}}
+            </td>
+            <td>
+                {{toy.Company}}
+            </td>
+            <td>
+                <a href="#/Edit/{{toy.Id}}">Update</a> <a href="javascript:;" data-ng-click="delete(toy.Id,toy.Name)">Delete</a>
+            </td>
+        </tr>
+
+    </table>
+</div>
+

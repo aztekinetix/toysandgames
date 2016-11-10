@@ -1,0 +1,27 @@
+﻿[
+  {
+    "Id": "1",
+    "Name": "Barbie Developer",
+    "Description": "Intended to girls",
+    "AgeRestriction": "20",
+    "Company": "Matrel",
+    "Price": "123.50"
+  },
+  {
+    "Id": "2",
+    "Name": "Ken Architecht",
+    "Description": "Who knows",
+    "AgeRestriction": "12",
+    "Company": "Matrel",
+    "Price": "128.50"
+  },
+  {
+    "Id": "3",
+    "Name": "Cara de Papa",
+    "Description":"All ages",
+    "AgeRestriction": "3",
+    "Company": "Habros",
+    "Price":"37.60"
+  }
+
+]
